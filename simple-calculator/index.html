@@ -12,26 +12,22 @@
         Simple calculator
     </h1>
     <script>
-        let firstValue = parseInt(prompt("Veuillez entrer la valeur 1"));
-        let operator = prompt("Veuillez entrer l'operateur");
-        let secondValue = parseInt(prompt("Veuillez entrer la valeur 2"))
+        name = prompt("What's your name")
+        let random = Math.floor(Math.random()*100)+1;
+        justePrix (name , random)
+        function justePrix(name, random) {
         
-        switch(operator){
-            case "+" :
-                console.log(firstValue + secondValue);
-                break;
-            case "-" :
-                console.log(firstValue - secondValue);
-                break;
-            case "*": 
-                console.log(firstValue * secondValue);
-                break;
-            case "/" : 
-                console.log(firstValue / secondValue);
-                break;
-            default: 
-                console.log("Error choose among those operators, + - * /")
-
+            let choix = 0
+            while (choix != random) {
+                if (random>choix ){
+                    console.log("C'est plus !");
+                }
+                else {
+                    console.log("C'est moins !");
+                }
+                choix = +prompt("Veuillez entrer un nombre compris entre 1 et 100");
+            }
+            console.log("Well done Wilders !!!")
         }
 
     </script>
