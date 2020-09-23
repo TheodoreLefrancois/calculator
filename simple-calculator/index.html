@@ -16,8 +16,23 @@
         let operator = prompt("Veuillez entrer l'operateur");
         let secondValue = parseInt(prompt("Veuillez entrer la valeur 2"))
         
-        console.log(firstValue + secondValue);
-        
+        switch(operator){
+            case "+" :
+                console.log(firstValue + secondValue);
+                break;
+            case "-" :
+                console.log(firstValue - secondValue);
+                break;
+            case "*": 
+                console.log(firstValue * secondValue);
+                break;
+            case "/" : 
+                console.log(firstValue / secondValue);
+                break;
+            default: 
+                console.log("Error choose among those operators, + - * /")
+
+        }
 
     </script>
 </body>
