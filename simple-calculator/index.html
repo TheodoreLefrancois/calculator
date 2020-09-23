@@ -12,12 +12,13 @@
         Simple calculator
     </h1>
     <script>
-        name = prompt("What's your name")
+        let name = prompt("What's your name")
         let random = Math.floor(Math.random()*100)+1;
         justePrix (name , random)
-        function justePrix(name, random) {
         
-            let choix = 0
+        function justePrix(name, random) {
+        let choix = 0
+
             while (choix != random) {
                 if (random>choix ){
                     console.log("C'est plus !");
