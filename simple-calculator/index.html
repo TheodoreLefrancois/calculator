@@ -9,12 +9,33 @@
 </head>
 <body>
     <h1>
-        Simple calculator
+        Super calculator 2001
     </h1>
+    <form id="form">
+        <label for="firstValue"></label><input id ="firstValue" type="number"> 
+        <select name="operator" id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="">/</option>
+
+        </select>
+        <label for="secondValue"></label><input type="number"> 
+        <button class="btn btn-primary" id="calculate" >=</button> 
+        <h1 id = "">
+            
+        </h1>
+     </form>
     <script>
-        let firstValue = parseInt(prompt("Veuillez entrer la valeur 1"));
-        let operator = prompt("Veuillez entrer l'operateur");
-        let secondValue = parseInt(prompt("Veuillez entrer la valeur 2"))
+        const form = document.querySelector("form")
+        const operand =document.querySelector("#operator")
+        const button= document.querySelector("#calculate")
+        const firstValue = document.querySelector("#firstValue")
+        const secondValue= document.querySelector("#secondVlue")
+
+        button.addEventListener
+        
+        
         
         switch(operator){
             case "+" :
