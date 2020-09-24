@@ -1,3 +1,7 @@
+let name = prompt("What's your name")
+        let random = Math.floor(Math.random()*100)+1;
+        justePrix (name , random)
+
 function justePrix(name, vincentLagaffe) {
     let choix = 0
 
